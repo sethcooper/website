@@ -1,25 +1,5 @@
 {% extends "layout.html" %}
-{% block content %}
-  <div class="jumbo bg-light">
-
-    <!-- Basic Card with Image, Title and Description -->
-    <div class="card" style="max-width:20rem;float:left">
-        <img class="card-img-top img-fluid" src="{{ url_for('static', filename='img/IMG_2060.jpg') }}" alt="card image">
-        <div class="card-body">
-            <h4 class="card-title">Seth I. Cooper</h4>
-
-            <div class="btn-group-vertical hidden-lg-up" role="group" aria-label="Card buttons">
-                <a class="card-link" href="mailto:seth@sethicooper.com"><i class="fas fa-envelope"></i> seth@sethicooper.com</a>
-                <br />
-                <a class="card-link" href="http://www.linkedin.com/in/seth-cooper"><i class="fab fa-linkedin"></i> linkedin.com/in/seth-cooper</a>
-                <br />
-                <a class="card-link" href="http://www.github.com/sethcooper"><i class="fab fa-github"></i> github.com/sethcooper</a>
-            </div>
-        </div>
-    </div>
-
-    <h2>Seth I. Cooper</h2>
-    <h3>Ph.D. physicist and data scientist</h3>
-
-  </div>
+{% block jumbocontent %}
+<h2>Seth I. Cooper</h2>
+<h3>Ph.D. physicist and data scientist</h3>
 {% endblock %}
