@@ -20,13 +20,7 @@
         $(document).ready(function() {
             var url = this.location.pathname;
             var filename = url.substring(url.lastIndexOf('/')+1);
-            $('a[href="' + filename + '"]').parent().addClass('active');
-            /*
-            console.log($('a[href="' + this.location.pathname + '"]').attr('href'))
-            console.log($('a[href="' + this.location.pathname + '"]').parent().attr('class'))
-            console.log($('.navbar').find('a[href="' + location.pathname + '"]').closest('li'))
-
-            $('a[href="' + filename + '"]').parent().addClass('active');*/
+            $('.navbar a[href="' + filename + '"]').parent().addClass('active');
         });
     </script>
 
