@@ -4,7 +4,7 @@
     <title>Seth I. Cooper</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 			  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
 			  crossorigin="anonymous"></script>
@@ -75,26 +75,30 @@
 
   <div class="container">
       <div class="jumbo bg-light">
+        <div class="row">
+            <div class="col-3 col-xs-5">
+                <!-- Basic Card with Image, Title and Description -->
+                <!--<div class="card" style="max-width:20rem;float:left"> -->
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="{{ url_for('static', filename='img/IMG_2060.jpg') }}" alt="card image">
+                    <div class="card-body">
+                        <!-- <h4 class="card-title">Seth I. Cooper</h4> -->
 
-        <!-- Basic Card with Image, Title and Description -->
-        <div class="card" style="max-width:20rem;float:left">
-            <img class="card-img-top img-fluid" src="{{ url_for('static', filename='img/IMG_2060.jpg') }}" alt="card image">
-            <div class="card-body">
-                <h4 class="card-title">Seth I. Cooper</h4>
-
-                <div class="btn-group-vertical hidden-lg-up" role="group" aria-label="Card buttons">
-                    <a class="card-link" href="mailto:seth@sethicooper.com"><i class="fas fa-envelope"></i> seth@sethicooper.com</a>
-                    <br />
-                    <a class="card-link" href="http://www.linkedin.com/in/seth-cooper"><i class="fab fa-linkedin"></i> linkedin.com/in/seth-cooper</a>
-                    <br />
-                    <a class="card-link" href="http://www.github.com/sethcooper"><i class="fab fa-github"></i> github.com/sethcooper</a>
+                        <div class="btn-group-vertical hidden-lg-up" role="group" aria-label="Card buttons">
+                            <a class="card-link" href="mailto:seth@sethicooper.com"><i class="fas fa-envelope fa-xs"></i><span class="d-none d-sm-inline"> seth@sethicooper.com</span></a>
+                            <br />
+                            <a class="card-link" href="http://www.linkedin.com/in/seth-cooper"><i class="fab fa-linkedin fa-xs"></i><span class="d-none d-sm-inline"> linkedin.com/in/seth-cooper</span></a>
+                            <br />
+                            <a class="card-link" href="http://www.github.com/sethcooper"><i class="fab fa-github fa-xs"></i><span class="d-none d-sm-inline"> github.com/sethcooper</span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-          {% block jumbocontent %}
-          {% endblock %}
-
+            <div class=col-9 col-xs-7>
+                {% block jumbocontent %}
+                {% endblock %}
+            </div>
       </div>
   </div>
 
