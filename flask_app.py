@@ -15,3 +15,6 @@ def home():
 def about():
     return render_template("about.html")
 
+@app.route('/music')
+def music():
+    return render_template("music.html")
