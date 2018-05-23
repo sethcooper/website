@@ -22,6 +22,9 @@
             var filename = url.substring(url.lastIndexOf('/')+1);
             $('.navbar a[href="' + filename + '"]').parent().addClass('active');
         });
+        /*$(function() {
+            $("div:empty").hide();
+        });*/
     </script>
 
     <header>
@@ -73,7 +76,7 @@
       </nav>
     </header>
 
-  <div class="container">
+    <div class="container">
       <div class="jumbo bg-light">
         <div class="row">
             <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
@@ -100,13 +103,28 @@
                 {% endblock %}
             </div>
       </div>
-  </div>
+    </div>
 
     <div class="container">
       {% block content %}
       {% endblock %}
     </div>
 
+    <hr>
+    <footer>
+        <center>
+            <p>
+                <a id="footer-link" href="home">Home</a>
+                |
+                <a class="footer-link" href="about">About</a>
+                |
+                <a class="footer-link" href="{ url_for('static', filename='pdf/cooper_cv.pdf') }}">Resume</a>
+                |
+                <a class="footer-link" href="music">Music</a>
+
+            </p>
+        </center>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>

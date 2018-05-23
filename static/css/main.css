@@ -141,7 +141,13 @@ h4 {
     }
 }
 
+div:empty {
+    display: none
+}
 
+hr {
+    margin-top: 0px;
+}
 /*
  * Display navigation links inline
  */
