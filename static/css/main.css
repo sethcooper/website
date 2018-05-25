@@ -79,7 +79,7 @@ h4 {
         font-size: 26px;
     }
     h3 {
-        font-size: 17px;
+        font-size: 20px;
     }
     h4 {
         font-size: 5px;
@@ -142,7 +142,15 @@ h4 {
 }
 
 div:empty {
-    display: none
+    display: none;
+}
+
+div p {
+    margin-right: 1em;
+}
+
+div a {
+    white-space: nowrap;
 }
 
 hr {
