@@ -147,6 +147,7 @@ div:empty {
 
 div p {
     margin-right: 1em;
+    margin-left:  1em;
 }
 
 div a {
